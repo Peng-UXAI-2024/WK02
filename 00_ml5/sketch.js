@@ -9,11 +9,11 @@ let mDetected = [];
 
 // start camera and create model
 function preload() {
-  mCamera = createCapture(VIDEO, { flipped: true });
+  mCamera = createCapture(VIDEO, { flipped: true });  
   mCamera.hide();
-
-  mModel = ml5.faceMesh();
-  // mModel = ml5.handPose();
+  
+  // mModel = ml5.faceMesh();
+  mModel = ml5.handPose();
 }
 
 // when some "thing" is detected, just copy it to mDetected
